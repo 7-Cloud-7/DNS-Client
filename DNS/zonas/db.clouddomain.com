@@ -9,8 +9,8 @@ $TTL    3600
 @       IN      NS      ns.clouddomain.com.
 @       IN      MX      10 serveremail.clouddomain.org.
 
-ns     IN      A       45.2.1.3
-etch    IN      A       192.168.0.2
+ns     IN       A       10.1.0.254
+etch    IN      A       10.1.0.2
 
 pop     IN      CNAME   ns
 www     IN      CNAME   etch

@@ -1,0 +1,5 @@
+zone "clouddomain.com." {
+        type master;
+        file "/var/lib/bind/db.clouddomain.com";
+        notify explicit;
+};

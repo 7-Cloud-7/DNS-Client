@@ -1,0 +1,14 @@
+version: '3.3'
+services:
+  asir_cliente:
+    container_name: asir_cliente
+    image: alpine
+    networks:
+      - asir_bind9_subnet
+    stdin open: true  #docker run -i
+    tty: true         #docker run -t
+    dns:
+      - 10.1.0.254 #ip del contenedor DNS
+networks:
+  asir_bind9_subnet:
+    external: true
